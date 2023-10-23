@@ -83,20 +83,20 @@
 -------
 
 возвращаем состояние файлов к нескольким более ранним коммитам  
-первый:
+**первый**:
 
     > git revert 79d0e32
     [main 13093d2] Revert "page_02.html added - Измеритель длины текста"
     2 files changed, 42 deletions(-)
     delete mode 100644 page_02.html
 
-второй: 
+**второй**: 
 
     > git revert 6f01004       
     [main 0f394b2] Revert "main.js edited - add changeButtonsStatus"
     1 file changed, 12 deletions(-)
 
-и третий: 
+и **третий**: 
 
     > git revert de041  
     Auto-merging README.md
