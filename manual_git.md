@@ -81,6 +81,18 @@
 
 ***
 
+#УПРАВЛЕНИЕ СВЯЗЯМИ С УДАЛЕННЫМ РЕПОЗИТОРИЕМ
+git remote add origin url
+git remote show origin
+git remote -v
+git remote remove origin
+git remote set-url origin new-path
+git remote set-url --add set-url --fetch origin new-path
+
+git fetch -all
+
+***
+
 # **Настройки GIT**
 * **`git version`** - показывает установленную версию GIT
 * **`git config --global user.name "Your Name"`** - указывает GIT-у Ваше имя, которым будут подписываться все коммиты
