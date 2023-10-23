@@ -1,0 +1,98 @@
+body {
+    background-color:rgb(255, 219, 166);
+    width: 800px;
+    font-family: Arial, Helvetica, sans-serif;  
+    margin: auto;  
+}
+
+h1, h2{
+    padding: 0 0;
+    margin: 5px 0;
+}
+
+DIV.articleTitle{
+    background-color:rgb(255, 239, 215);
+    width: 800px; /* Ширина элемента в пикселах */
+    padding: 20px; /* Поля вокруг текста */
+    margin: auto; /* Выравниваем по центру */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+DIV.articleText{
+    background-color:rgb(255, 239, 215);
+    width: 800px; /* Ширина элемента в пикселах */    
+    padding: 20px; /* Поля вокруг текста */
+    margin: auto; /* Выравниваем по центру */
+    margin-top: 25px;
+    margin-bottom: 25px;    
+}
+
+DIV.bordered{
+    border: 5px; 
+    border-style: solid;
+    border-color: red;
+}
+
+img{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.fig{
+    width: 100px;
+    float: left; /* Обтекание картинки по левому краю */
+    padding-right: 20px; /* Отступ слева */
+    padding-bottom: 10px; /* Отступ снизу */
+}
+
+p.legend{
+    font-style: italic;
+    text-align: center;   
+}
+
+p{
+    text-align: justify;
+}
+
+.redAlert{
+    color: crimson;
+    font-weight: bold;    
+}
+
+button{
+    width: 150px;
+    height: 25px;
+    background-color:rgb(160, 207, 255);
+    font-weight: bold;
+}
+
+button:hover{
+    background-color:aqua;
+}
+
+button:active{
+    border-width: 3px;
+    color: aqua;
+    background-color: darkblue;
+}
+
+.todo{
+    color:darkgreen;
+    font-weight: normal;
+}
+
+.todoDone{
+    text-decoration:line-through;
+    color: gray;
+    font-weight: normal;
+}
+
+LI.todo:hover{
+    font-weight: bold;
+    color: darkred;
+    border: 1px solid red;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Тестирование javascript, php
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script lang="javascript" src="scripts.js"></script>
+</head>
+<body>
+    <section>
+        <div class="articleTitle">
+            <h1>Урок 3. Основы JavaScript</h1>
+        </div>
+        
+        <div class="articleText">
+            <h2>Основное задание</h2>
+            <ol>
+                <li>Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции.</li>
+                <li>Перепишите код, используя конструкцию switch-case, запрашивая возраст пользователя через диалоговое окно.</li>
+            </ol>
+            <h2>Доп задание</h2>
+            <ol>
+                <li>Сделать так, чтобы при нажатии на кнопку менялся цвет и текст элемента  &lt;р&gt;</li>
+                <li>Сделать так, чтобы при нажатии на кнопку все элементы списка (тэги ul, li) меняли цвет на активный</li>
+                <li>Сделать так, чтобы при наведении на элемент его цвет менялся на другой (не обязательно делать при помощи js)</li>
+            </ol>
+        </div>
+
+        <div class="articleText">
+            <h1 id="helloUser" class="">ПРИВЕТ! Представишься?</h1>
+            <button onclick="printUserName(getUserName());">Представиться ...</button>
+            <button onclick="reset();">Попрощаться ...</button>
+        </div>
+        
+        <div class="articleText bordered"  style="display: none;" id="hidden1">
+            <p>Сегодня у тебя <b>много</b> <span style="color: red;">ВАЖНЫХ</span> дел! Проверь каждое ПОСТРОЧНО:</p>
+            <ol id="business" style="display: inline-block;">
+                <li class="todo">посмотреть лекции по JAVA</li>
+                <li class="todo">сделать несколько домашек</li>
+                <li class="todo">посмотреть в зеркало и убедиться, что ты великий разраб</li>
+                <li class="todo">расковырять очередной HTML код с javascript</li>
+                <li class="todo">ещё раз убедиться, что ты великий разраб</li>
+            </ol>
+            <p id="result"></p>
+            <button onclick="allDone();">ВСЁ ВЫПОЛНЕНО !</button>
+            <button onclick="allUndone();">ПОДУМАТЬ ЕЩЁ</button>
+        </div>
+
+        <div class="articleText">
+<pre>
+================= В Е Т В Л Е Н И Е =================================
+let age = 101;
+
+if (age == 18){
+    alert("Вы совершеннолетний. Можно всё.")
+} else if (age == 10 &&){
+    alert("Пора учить уроки, завтра контрольная!")
+} else if (age == 30){
+    alert("Пора в люльку, завтра рано вставать на работу!")
+} else {
+    alert("ИИ ещё не вычислил направление Вашей судьбы...")
+}
+
+=============== ТОТ ЖЕ КОД, НО С ИСПОЛЬЗОВАНИЕМ SWITCH ==============
+let age = 30;
+
+switch (age){
+    case 10:                       
+        alert("Пора учить уроки, завтра контрольная!");
+        break;
+    case 18:
+        alert("Вы совершеннолетний. Можно всё.");
+        break;
+    case 30:
+        alert("Пора в люльку, завтра рано вставать на работу!");
+        break;
+    default:
+        alert("ИИ ещё не вычислил направление Вашей судьбы...");
+}
+</pre> 
+
+можно проверить этот код на практике:
+
+<button onclick="askAge();"> ПУСК !</button>
+
+        </div>
+
+    </section>
+</body>
+</html>
