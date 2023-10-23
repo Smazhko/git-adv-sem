@@ -6,12 +6,12 @@ body {
 }
 
 h1, h2{
-    padding: 0 0;
+    padding: 10 10;
     margin: 5px 0;
 }
 
 DIV.articleTitle{
-    background-color:rgb(255, 239, 215);
+    background-color:rgb(226, 241, 253);
     width: 800px; /* Ширина элемента в пикселах */
     padding: 20px; /* Поля вокруг текста */
     margin: auto; /* Выравниваем по центру */
@@ -20,7 +20,7 @@ DIV.articleTitle{
 }
 
 DIV.articleText{
-    background-color:rgb(255, 239, 215);
+    background-color:rgb(226, 241, 253);
     width: 800px; /* Ширина элемента в пикселах */    
     padding: 20px; /* Поля вокруг текста */
     margin: auto; /* Выравниваем по центру */
