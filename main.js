@@ -8,6 +8,18 @@
         return count;
     }
 
+    let changeButtonsStatus = function(enable) {
+        let countButton = document.querySelector('#count-button');
+        let resetButton = document.querySelector('#reset-button');
+        if (enable) {
+            countButton.removeAttribute('disabled');
+            resetButton.removeAttribute('disabled');
+        } else {
+            countButton.setAttribute('disabled', 'disabled');
+            resetButton.setAttribute('disabled', 'disabled');
+        }
+    }
+
     document.addEventListener('DOMContentLoaded', function(){
         let textArea = document.querySelector('#text');
         let result = document.querySelector('#result');
